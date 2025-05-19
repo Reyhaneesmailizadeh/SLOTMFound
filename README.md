@@ -39,7 +39,7 @@ pip install -r requirement.txt
 
 ### Fine-tuning with ThickFound/SLOFound weights
 
-To fine tune ThickFound/SLOFound on your own data, follow these steps:
+To fine tune ThickFound/SLOFound on your own unlabeled data with self-supervised learning approach, follow these steps:
 
 1. Download the ThickFound/SLOFound pre-trained weights or add them to your drive:
 <table><tbody>
