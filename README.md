@@ -37,7 +37,7 @@ pip install -r requirement.txt
 ```
 
 
-### Fine-tuning with ThickFound/SLOFound weights
+### 📌 Fine-tuning with ThickFound/SLOFound weights. Self-supervised approach
 
 To fine tune ThickFound/SLOFound on your own unlabeled data with self-supervised learning approach, follow these steps:
 
@@ -143,7 +143,7 @@ python -m torch.distributed.launch --nproc_per_node=1 --master_port=48798 main_p
     --data_path /content/drive/MyDrive/path-to-your-data/
 ```
 
-
+### 📌 Fine-tuning with ThickFound/SLOFound weights. Classification task
 
 Requirements for running the code of Best-MultiModal-Model.ipynb is as follow:
 ```
