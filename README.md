@@ -8,12 +8,12 @@ Please contact 	**reyhaneh.esmailizadeh.ut@gmail.com** if you have questions.
 
 ### Key features
 
-- ThickFound is the RetFound-Fundus which is pre-trained on 1469 thickness maps with self-supervised learning
-- ThickFound has been validated in multiple disease detection tasks
+- ThickFound is the RetFound-Fundusو which is fine-tuned on 1469 thickness maps with self-supervised learning
+- ThickFound has been validated in MS disease detection tasks
 - ThickFound can be efficiently adapted to customised tasks
 
-- SLOFound is the RetFound-Fundus which is pre-trained on 203 SLO images with self-supervised learning
-- SLOFound has been validated in multiple disease detection tasks
+- SLOFound is the RetFound-Fundus, which is fine-tuned on 203 SLO images with self-supervised learning
+- SLOFound has been validated in MS disease detection tasks
 - SLOFound can be efficiently adapted to customised tasks
 
 
@@ -35,7 +35,7 @@ pip install -r requirement.txt
 ```
 
 
-### 🌱Fine-tuning with ThickFound weights
+### Fine-tuning with ThickFound/SLOFound weights
 
 To fine tune ThickFound/SLOFound on your own data, follow these steps:
 
@@ -55,20 +55,49 @@ To fine tune ThickFound/SLOFound on your own data, follow these steps:
 </tr>
 </tbody></table>
 
-2. Organise your data into this directory structure (Public datasets used in this study can be [downloaded here](BENCHMARK.md))
+2. Organise your data into this directory structure
 
 ```
 ├── data folder
     ├──train
-        ├──class_a
-        ├──class_b
-        ├──class_c
+        ├──folder_a
+        ├──folder_b
+        ├──folder_c
     ├──valid
-        ├──class_a
-        ├──class_b
-        ├──class_c
+        ├──folder_a
+        ├──folder_b
+        ├──folder_c
 ``` 
-
+Example of our data directory for fine-tuning RetFound-Fundus on thickness maps is as follow. TM is an abbreviation of thickness mao.
+```
+├── data folder
+    ├──train
+        ├──GCIPL_TM
+            |1.png
+            |2.png
+            |3.png
+        ├──RNFL_TM
+            |1.png
+            |2.png
+            |3.png
+        ├──TotalRetina_TM
+            |1.png
+            |2.png
+            |3.png
+    ├──valid
+        ├──GCIPL_TM
+            |1.png
+            |2.png
+            |3.png
+        ├──RNFL_TM
+            |1.png
+            |2.png
+            |3.png
+        ├──TotalRetina_TM
+            |1.png
+            |2.png
+            |3.png
+```
 3. Start fine-tuning. A fine-tuned checkpoint will be saved during training. Evaluation will be run after training.
 
 
