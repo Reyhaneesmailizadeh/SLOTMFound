@@ -105,7 +105,7 @@ Example of our data directory for fine-tuning RetFound-Fundus on thickness maps 
 
 Fine-tuning ThickFound on your own unlabeled data:
 ```
-#Code from https://github.com/rmaphoh/RETFound_MAE
+#Code from https://github.com/rmaphoh/RETFound_MAE with minor changes
 %%shell
 cd RETFound-Edited
 eval "$(conda shell.bash hook)" # copy conda command to shell
@@ -125,7 +125,7 @@ python -m torch.distributed.launch --nproc_per_node=1 --master_port=48798 main_p
 ```
 Fine-tuning SLOFound on your own unlabeled data:
 ```
-#Code from https://github.com/rmaphoh/RETFound_MAE
+#Code from https://github.com/rmaphoh/RETFound_MAE with minor changes
 %%shell
 cd RETFound-Edited
 eval "$(conda shell.bash hook)" # copy conda command to shell
