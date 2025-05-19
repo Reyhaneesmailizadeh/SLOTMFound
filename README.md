@@ -101,7 +101,7 @@ Example of our data directory for fine-tuning RetFound-Fundus on thickness maps 
             |3.png
 ```
 3. Start fine-tuning. A fine-tuned checkpoint will be saved during training.
-4. 
+
 Fine-tuning ThickFound on your own unlabeled data:
 ```
 #Code from https://github.com/rmaphoh/RETFound_MAE
