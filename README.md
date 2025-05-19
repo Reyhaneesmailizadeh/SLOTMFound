@@ -8,7 +8,7 @@ Please contact 	**reyhaneh.esmailizadeh.ut@gmail.com** if you have questions.
 
 ### Key features
 
-- ThickFound is the RetFound-Fundusو which is fine-tuned on 1469 thickness maps with self-supervised learning
+- ThickFound is the RetFound-Fundus, which is fine-tuned on 1469 thickness maps with self-supervised learning
 - ThickFound has been validated in MS disease detection tasks
 - ThickFound can be efficiently adapted to customised tasks
 
