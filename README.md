@@ -59,7 +59,7 @@ To fine tune ThickFound/SLOFound on your own data, follow these steps:
 
 2. Organise your data into this directory structure
    
-Both ThickFound and SLOFound expects the input image to be in this shape: (224,224,3). Hence, make sure the number of channel of your image is 3.
+Both ThickFound and SLOFound expects the input image to be in this shape: (224,224,3). Hence, make sure the number of channel of your image data is 3.
 ```
 ├── data folder
     ├──train
