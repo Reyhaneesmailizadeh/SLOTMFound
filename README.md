@@ -189,3 +189,16 @@ urllib3                  1.26.7
 wheel                    0.37.1
 zipp                     3.15.0
 ```
+
+## Citing our paper
+please include this in your work if you want to use any part of the work here:
+```
+@InProceedings{ICMV_2025,
+    author    = {Esmailizadeh, Aghababaei, Mirzaei, Arian, Kafieh},
+    title     = {MS Diagnosis Using Novel Foundation Multimodal and-SLO images},
+    booktitle = {Proceedings of the 18th international Conference on Machine Vision(ICMV)},
+    month     = {},
+    year      = {2025},
+    pages     = {}
+}
+```
