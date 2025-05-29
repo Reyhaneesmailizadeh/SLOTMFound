@@ -1,16 +1,17 @@
-##  MS-Diagnosis-Using-Novel-Foundation-Multimodal-and-SLO-images
+##  SLOTMFound: Foundation-Based Diagnosis of Multiple Sclerosis Using Retinal SLO Imaging and OCT Thickness-maps.
 
 
-Official repo for [MS Diagnosis Using Novel Foundation Multimodal and-SLO images], which is based on [MAE](https://github.com/facebookresearch/mae):
+
+Official repo for [SLOTMFound: Foundation-Based Diagnosis of Multiple Sclerosis Using Retinal SLO Imaging and OCT Thickness-maps], which is based on [MAE](https://github.com/facebookresearch/mae):
 
 Please contact 	**reyhaneh.esmailizadeh.ut@gmail.com** if you have questions.
 
 
 ### Key features
 
-- ThickFound is the RetFound-Fundus, which is fine-tuned on 1469 thickness maps with self-supervised learning
-- ThickFound has been validated in MS disease detection tasks
-- ThickFound can be efficiently adapted to customised tasks
+- TMFound is the RetFound-Fundus, which is fine-tuned on 1469 thickness maps with self-supervised learning
+- TMFound has been validated in MS disease detection tasks
+- TMFound can be efficiently adapted to customised tasks
 
 - SLOFound is the RetFound-Fundus, which is fine-tuned on 203 SLO images with self-supervised learning
 - SLOFound has been validated in MS disease detection tasks
@@ -37,18 +38,18 @@ pip install -r requirement.txt
 ```
 
 
-### 📌 Fine-tuning with ThickFound/SLOFound weights. Self-supervised approach
+### 📌 Fine-tuning with TMFound/SLOFound weights. Self-supervised approach
 
-To fine tune ThickFound/SLOFound on your own unlabeled data with self-supervised learning approach, follow these steps:
+To fine tune TMFound/SLOFound on your own unlabeled data with self-supervised learning approach, follow these steps:
 
-1. Download the ThickFound/SLOFound pre-trained weights or add them to your drive:
+1. Download the TMFound/SLOFound pre-trained weights or add them to your drive:
 <table><tbody>
 <!-- START TABLE -->
 <!-- TABLE HEADER -->
 <th valign="bottom"></th>
 <th valign="bottom">ViT-Large</th>
 <!-- TABLE BODY -->
-<tr><td align="left">ThickFound</td>
+<tr><td align="left">TMFound</td>
 <td align="center"><a href="https://drive.google.com/file/d/1sk1IAdBaQ60qTCGqOQw5_s6E1tQj4Ftk/view?usp=sharing">download</a></td>
 </tr>
 <!-- TABLE BODY -->
@@ -59,7 +60,7 @@ To fine tune ThickFound/SLOFound on your own unlabeled data with self-supervised
 
 2. Organise your data into this directory structure
    
-Both ThickFound and SLOFound expects the input image to be in this shape: (224,224,3). Hence, make sure the number of channel of your image data is 3.
+Both TMFound and SLOFound expects the input image to be in this shape: (224,224,3). Hence, make sure the number of channel of your image data is 3.
 ```
 ├── data folder
     ├──train
@@ -103,7 +104,7 @@ Example of our data directory for fine-tuning RetFound-Fundus on thickness maps 
 ```
 3. Start fine-tuning. A fine-tuned checkpoint will be saved during training.
 
-Fine-tuning ThickFound on your own unlabeled data:
+Fine-tuning TMFound on your own unlabeled data:
 ```
 #Code from https://github.com/rmaphoh/RETFound_MAE with minor changes
 %%shell
@@ -143,7 +144,7 @@ python -m torch.distributed.launch --nproc_per_node=1 --master_port=48798 main_p
     --data_path /content/drive/MyDrive/path-to-your-data/
 ```
 
-### 📌 Fine-tuning with ThickFound/SLOFound weights. Classification task
+### 📌 Fine-tuning with TMFound/SLOFound weights. Classification task
 
 Requirements for running the code of Best-MultiModal-Model.ipynb is as follow:
 ```
