@@ -144,7 +144,7 @@ python -m torch.distributed.launch --nproc_per_node=1 --master_port=48798 main_p
     --data_path /content/drive/MyDrive/path-to-your-data/
 ```
 
-### 📌 Fine-tuning with TMFound/SLOFound weights. Classification task
+
 
 Requirements for running the code of Best-MultiModal-Model.ipynb is as follow:
 ```
@@ -196,7 +196,7 @@ please include this in your work if you want to use any part of the work here:
 ```
 @InProceedings{ICMV_2025,
     author    = {Esmailizadeh, Aghababaei, Mirzaei, Arian, Kafieh},
-    title     = {MS Diagnosis Using Novel Foundation Multimodal and-SLO images},
+    title     = {SLOTMFound: Foundation-Based Diagnosis of Multiple Sclerosis Using Retinal SLO Imaging and OCT Thickness-maps},
     booktitle = {Proceedings of the 18th international Conference on Machine Vision(ICMV)},
     month     = {},
     year      = {2025},
