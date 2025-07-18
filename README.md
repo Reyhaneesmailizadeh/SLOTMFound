@@ -194,12 +194,6 @@ zipp                     3.15.0
 ## Citing our paper
 please include this in your work if you want to use any part of the work here:
 ```
-@InProceedings{ICMV_2025,
-    author    = {Esmailizadeh, Aghababaei, Mirzaei, Arian, Kafieh},
-    title     = {SLOTMFound: Foundation-Based Diagnosis of Multiple Sclerosis Using Retinal SLO Imaging and OCT Thickness-maps},
-    booktitle = {Proceedings of the 18th international Conference on Machine Vision(ICMV)},
-    month     = {},
-    year      = {2025},
-    pages     = {}
-}
+This work has been accepted to ICMV 2025. A preprint is available at medRxiv.
+Please cite the preprint until the official conference version is published.
 ```
