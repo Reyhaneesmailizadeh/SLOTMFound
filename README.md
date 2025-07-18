@@ -5,7 +5,7 @@
 Official repo for [SLOTMFound: Foundation-Based Diagnosis of Multiple Sclerosis Using Retinal SLO Imaging and OCT Thickness-maps], which is based on [MAE](https://github.com/facebookresearch/mae):
 
 Please contact 	**reyhaneh.esmailizadeh.ut@gmail.com** if you have questions.
-
+You can find the paper here: https://www.medrxiv.org/content/10.1101/2025.07.14.25331522v1
 
 ### Key features
 
